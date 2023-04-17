@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom';
 import FullInput from "../components/inputs";
 import Wrapper from "../components/wrapper";
 import Header from "../components/header";

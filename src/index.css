@@ -19,3 +19,17 @@ code {
   font-family: Roboto, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+input{
+  transition: ease-in-out 300ms;
+}
+
+.error{
+  border:none;
+  box-shadow: 0 0 0 2px rgb(211, 24, 24);
+}
+
+ .valid{
+  border:none;
+  box-shadow: 0 0 0 2px rgb(49, 196, 49);
+}

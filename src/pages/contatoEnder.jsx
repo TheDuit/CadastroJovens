@@ -3,17 +3,17 @@ import Wrapper from "../components/wrapper";
 import Header from "../components/header";
 import Title from "../components/title";
 
-function Contato(){
+function Contato(){return(
     <div className="App">      
     <Header></Header>
       <Title>DADOS GERAIS</Title>
       <Wrapper>
-        <FullInput title="Nome"/>
-        <FullInput title="E-mail"/>
-        <FullInput title="CPF"/>
-        <FullInput title="Data de Nascimento"/>
+        <FullInput title="CEP"/>
+        <FullInput title="Endereço"/>
+        <FullInput title="Cidade"/>
       </Wrapper>
     </div>
+);
 }
 
 export default Contato;

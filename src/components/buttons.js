@@ -12,7 +12,7 @@ border:1px solid #fff;
 outline:none;
 margin-top:1rem;
 background: rgb(8,220,168);
-background: linear-gradient(225deg, rgba(8,220,168,1) 0%, rgba(56,106,235,1) 100%);
+background: linear-gradient(225deg, rgba(56,106,235,1) 0%, rgba(8,220,168,1) 100%);
 text-decoration: none;
 `;
 
