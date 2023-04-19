@@ -6,8 +6,6 @@ export default function handleCpf(event){
     valor = valor.replace(/(\d{3})(\d{1,2})$/, '$1-$2'); 
     campo.value = valor; 
 
-    console.log(validarCPF(valor))
-
     if(!validarCPF(valor)){
         campo.classList.add('error');
         campo.classList.remove('valid');
@@ -21,7 +19,7 @@ export default function handleCpf(event){
 
 function validarCPF(cpf) {
     cpf = cpf.replace(/[^\d]+/g,''); 
-    if (cpf == '') return false; 
+    if (cpf === '') return false; 
     var soma = 0;
     for (let i = 0; i < 9; i++) {
       soma += parseInt(cpf.charAt(i)) * (10 - i);
@@ -30,7 +28,7 @@ function validarCPF(cpf) {
     if (resto === 10 || resto === 11) {
       resto = 0;
     }
-    if (resto != parseInt(cpf.charAt(9))) {
+    if (resto !== parseInt(cpf.charAt(9))) {
       return false;
     }
     soma = 0;
@@ -41,7 +39,7 @@ function validarCPF(cpf) {
     if (resto === 10 || resto === 11) {
       resto = 0;
     }
-    if (resto != parseInt(cpf.charAt(10))) {
+    if (resto !== parseInt(cpf.charAt(10))) {
       return false;
     }
   

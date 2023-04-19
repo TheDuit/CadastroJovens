@@ -33,3 +33,17 @@ input{
   border:none;
   box-shadow: 0 0 0 2px rgb(49, 196, 49);
 }
+.gridEnd{
+  border:1px solid #ffffff21;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:1rem;
+  border-radius: 1rem;
+  row-gap: .2rem;
+  column-gap: 1rem;
+  text-align: right;
+}
+
+.gridEnd input{
+  width: 50vw !important;
+}

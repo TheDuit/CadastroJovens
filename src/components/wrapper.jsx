@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     border-radius:.5rem;
     border:1px solid #ffffff60;
     box-shadow: .5rem .5rem 1rem #00000070;
-    align-content: center;
+    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin:auto;
