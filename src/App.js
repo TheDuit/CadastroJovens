@@ -8,13 +8,14 @@ import DadosPessoais from "./pages/dadosPessoais";
 import Contato from "./pages/contatoEnder";
 
 function App() {
-  return (
+  return (<>
     <Router>
       <Routes>
         <Route path="/" element={<DadosPessoais/>}/>
         <Route path="/cont" element={<Contato/>}/>
       </Routes>
     </Router>
+    </>
   );
 }
 export default App;

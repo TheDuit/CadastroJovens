@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import handleDate from "../Utils/handleDate";
 import handleCpf from "../Utils/handleCPF";
-import handleEmail from "../Utils/handleEmail";
+import {handleEmail, invalidMailNoti} from "../Utils/handleEmail";
 import handleCep from "../Utils/handleCep";
 
 const Input = styled.input`
@@ -26,7 +27,7 @@ function fullInput(props) {
                     title={props.title}
                     placeholder="_____-___"
                     onBlur={handleCpf}
-                    maxLength={9}
+                    maxLength={14}
                 />
             </div>);
 
@@ -52,6 +53,8 @@ function fullInput(props) {
                 <br />
                 <Input type="date"
                     title={props.title}
+                    onBlur={handleDate}
+                    maxLength={10}
                 />
             </div>);
 
@@ -67,6 +70,7 @@ function fullInput(props) {
                         title={props.title}
                         placeholder="Insira seu e-mail"
                         onChange={handleEmail}
+                        onBlur={invalidMailNoti}
                     />
                 </div>
             )
